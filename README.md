@@ -1,18 +1,24 @@
 # DiscordBot
 
-**An automation project for Discord.**
+**A Python Discord bot with quote retrieval, encouragement responses and a local JSON data store.**
 
-`Bots · Automation` · `Python` · Repository reference
+`Discord.py · Python · Requests · JSON` · `Bot experiment` · Repository reference
 
 ---
 
 ## Project overview
 
-Explore an automation project for discord. The repository contains the implementation and associated assets for this project.
+The bot's Python entry point contains message and encouragement logic, an external quote API call, and a JSON-backed store. Additional JavaScript files explore face and eye tracking; they should be treated as separate experiments rather than required bot capabilities.
 
 ## Run or inspect locally
 
-Inspect the checked-in files for the appropriate runtime. Not all repositories have a one-command start script.
+Use a Python virtual environment, install packages required by `main.py` (including Discord.py, Requests and python-dotenv), and review `keep_alive.py` and the bot permissions. Start the bot with:
+
+```bash
+python main.py
+```
+
+Provide a new bot token using local environment configuration. **Never commit or share bot credentials.**
 
 ## Repository contents
 
@@ -35,6 +41,9 @@ Inspect the checked-in files for the appropriate runtime. Not all repositories h
 - Inspect any dependency, permission, token or environment-variable requirements before execution.
 
 ## Scope
+
+Do not use the repository's historical credential values. Rotate any active tokens before running or publishing an instance.
+
 
 This README reflects files currently present in the repository. It does not claim that all external services, hosting links or dependencies are operational. Never publish credentials or user data when testing it.
 
